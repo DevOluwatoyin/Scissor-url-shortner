@@ -9,7 +9,6 @@ import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const router = useRouter();
-
   const [nav, navOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -42,9 +41,7 @@ const Navbar = () => {
           {navList.map((text, index) => {
             const isActive = router.asPath === text.href;
             return (
-              <li
-                key={index}
-              >
+              <li key={index}>
                 <Link
                   href={text.href}
                   className={
@@ -61,16 +58,18 @@ const Navbar = () => {
           })}
         </ul>
         <div className="hidden lg:flex items-center justify-between space-x-4 w-72">
-          <button className="text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-            <Link href="/login" className="w-full">
-              Log in
-            </Link>
-          </button>
-          <button className="text-white bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-            <Link href="/signup" className="w-full">
-              Try for free
-            </Link>
-          </button>
+          <Link
+            href="/login"
+            className="text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2"
+          >
+            Log in
+          </Link>
+          <Link
+            href="/signup"
+            className="text-white bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2"
+          >
+            Try for free
+          </Link>
         </div>
       </div>
       <div
@@ -85,7 +84,7 @@ const Navbar = () => {
             {navList.map((text, index) => (
               <li
                 key={index}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                className="px-4 cursor-pointer capitalize py-6 text-lg md:text-4xl"
               >
                 <Link href={text.href} onClick={() => navOpen(!nav)}>
                   <span>{text.list}</span>
@@ -93,16 +92,18 @@ const Navbar = () => {
               </li>
             ))}
             <div className="flex items-center flex-col justify-between space-y-4 w-72">
-              <button className="text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-                <Link href="/login" className="w-full">
-                  Log in
-                </Link>
-              </button>
-              <button className="text-white bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2">
-                <Link href="/signup" className="w-full">
-                  Try for free
-                </Link>
-              </button>
+              <Link
+                href="/login"
+                className="text-primary-300 text-center hover:border hover:border-primary-300 py-2 rounded-full w-1/2"
+              >
+                Log in
+              </Link>
+              <Link
+                href="/signup"
+                className="text-white text-center bg-primary-300 hover:bg-white hover:text-primary-300 hover:border hover:border-primary-300 py-2 rounded-full w-1/2"
+              >
+                Try for free
+              </Link>
             </div>
           </ul>
         </>
