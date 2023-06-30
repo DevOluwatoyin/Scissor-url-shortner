@@ -12,9 +12,9 @@ export const navList = [
         <BsChevronDown />
       </>
     ),
-    href: "/features",
+    href: "#why-us",
   },
   { list: "Pricing", href: "#pricing" },
-  { list: "Analytics", href: "/anallytics" },
+  { list: "Analytics", href: "/" },
   { list: "FAQs", href: "#faq" },
 ];

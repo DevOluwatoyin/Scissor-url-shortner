@@ -11,7 +11,7 @@ const Signup = () => {
         <meta name="description" content="Log in with Google or Apple" />
       </Head>
       <div className="w-full flex items-center justify-center bg-white">
-        <div className="text-center mx-auto w-full max-w-md my-28 space-y-4 px-8 md:px-0">
+        <div className="text-center mx-auto w-full max-w-md my-28 space-y-4 px-4 md:px-0">
           <p className="text-neutral-500">Sign up with:</p>
           <div className="flex items-center space-x-6 justify-center">
             <button className="flex space-x-1 bg-primary-400 px-4 py-2 text-white text-base items-center rounded">

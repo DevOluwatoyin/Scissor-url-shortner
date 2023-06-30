@@ -6,7 +6,7 @@ import analysis from "../assets/link-analysis.png";
 
 const WhyUs = () => {
   return (
-    <div className="bg-white w-full pb-10 md:py-14">
+    <div id="why-us" className="bg-white w-full pb-10 md:py-14">
       <div className="w-full max-w-6xl mx-auto flex flex-col items-center justify-between  md:items-start md:flex-row md:space-x-14 md:px-4">
         <div className="w-full px-4 mb-8 space-y-4 text-justify md:text-left md:w-1/3 md:px-0 md:mb-0">
           <h2 className="font-bold text-main-text text-3xl">
