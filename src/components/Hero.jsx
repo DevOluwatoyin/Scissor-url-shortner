@@ -42,33 +42,35 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-bg-light w-full flex flex-col justify-between md:justify-evenly items-center py-10 space-y-4 md:space-y-0 md:flex-row">
-        <p className="font-bold text-2xl text-center w-full md:text-left">
-          One Stop.
-          <br /> Four{" "}
-          <span className="font-bold text-primary-400">Possibilities.</span>
-        </p>
-        <div className="w-full grid grid-cols-[1fr_1fr] place-items-center md:flex md:justify-evenly">
-          <p className="flex flex-col justify-center items-left">
-            <span className="font-bold text-xl">3M</span>
-            <span>Active users</span>
+      <div className="bg-bg-light md:px-2">
+        <div className="w-full max-w-6xl mx-auto flex flex-col justify-between items-center py-10 space-y-4 md:space-y-0 md:flex-row">
+          <p className="font-bold text-2xl text-center w-full md:max-w-[230px] md:text-left">
+            One Stop.
+            <br /> Four{" "}
+            <span className="font-bold text-primary-400">Possibilities.</span>
           </p>
-          <p className="flex flex-col justify-center items-left">
-            <span className="font-bold text-xl">60M</span>
-            <span>
-              Links & QR <br /> codes created
-            </span>
-          </p>
-          <p className="flex flex-col justify-center items-left">
-            <span className="font-bold text-xl">1B</span>
-            <span>
-              Clicked & Scanned <br /> connections
-            </span>
-          </p>
-          <p className="flex flex-col justify-center items-left">
-            <span className="font-bold text-xl">300k</span>
-            <span>App Integrations</span>
-          </p>
+          <div className="w-full grid grid-cols-[1fr_1fr] place-items-baseline px-4 md:flex md:justify-between">
+            <p className="flex flex-col justify-center md:items-left">
+              <span className="font-bold text-xl">3M</span>
+              <span>Active users</span>
+            </p>
+            <p className="flex flex-col justify-center md:items-left">
+              <span className="font-bold text-xl">60M</span>
+              <span>
+                Links & QR <br /> codes created
+              </span>
+            </p>
+            <p className="flex flex-col justify-center md:items-left">
+              <span className="font-bold text-xl">1B</span>
+              <span>
+                Clicked & Scanned <br /> connections
+              </span>
+            </p>
+            <p className="flex flex-col justify-center md:items-left">
+              <span className="font-bold text-xl">300k</span>
+              <span>App Integrations</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

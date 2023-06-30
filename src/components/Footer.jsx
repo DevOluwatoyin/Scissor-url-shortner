@@ -10,9 +10,9 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-white w-full overflow-hidden">
-      <div className="footer-bg-img w-full py-20">
-        <div className="flex justify-between w-full max-w-7xl gap-4 mx-auto ">
-          <div className="w-1/5 flex flex-col items-center space-y-4">
+      <div className="footer-bg-img w-full">
+        <div className="flex flex-col items-center justify-between w-full max-w-7xl gap-4 mx-auto py-10 md:flex-row md:py-20 md:items-start md:px-2">
+          <div className="w-full flex flex-col items-center space-y-4 md:w-1/5">
             <Image src={logo} alt="scissor" />
             <div className="flex w-full justify-evenly">
               <AiOutlineTwitter className="text-2xl" />
@@ -21,8 +21,8 @@ const Footer = () => {
               <AiFillFacebook className="text-2xl" />
             </div>
           </div>
-          <div className="flex w-3/5 flex-col items-center justify-between gap-8">
-            <div className="w-full flex items-start justify-between">
+          <div className="flex w-full flex-col items-center justify-between gap-8">
+            <div className="w-full flex px-2 gap-1 md:gap-0 md:px-0 md:items-start md:justify-between">
               <div className="w-1/3">
                 <h4 className="font-bold">Why Scissor ?</h4>
                 <div>
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-start justify-between">
+            <div className="w-full flex px-2 gap-1 md:gap-0 md:px-0 md:items-start md:justify-between">
               <div className="w-1/3">
                 <h4 className="font-bold">Resources</h4>
                 <p>Blog</p>
@@ -83,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/5">
+          <div className="flex flex-col w-full items-center md:items-start md:w-1/5">
             <h4 className="font-bold">Company</h4>
             <div>
               <p>About Scissor</p>
@@ -95,7 +95,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <aside className="flex items-end justify-evenly w-[296px] ml-auto mr-20 text-xs font-medium">
+        <aside className="flex items-center justify-evenly w-[296px] mx-auto text-xs font-medium pb-8 md:ml-auto md:mr-20 md:items-end">
           <span>Term of Service</span>
           <span className="px-3 border-x border-x-main-text">Security</span>
           <span>Scissor {new Date().getFullYear()}</span>

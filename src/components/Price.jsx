@@ -1,4 +1,5 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+
 const Price = () => {
   return (
     <div id="pricing" className="w-full">
@@ -6,7 +7,7 @@ const Price = () => {
         A <span className="text-primary-400">price perfect</span> for your
         needs.
       </h2>
-      <p className="w-1/3 mx-auto text-center">
+      <p className="mx-auto text-center px-2 md:px-0 md:w-2/3 lg:w-1/2">
         From catering for your personal, business, event, socials needs, you can
         be rest assured we have you in mind in our pricing.
       </p>

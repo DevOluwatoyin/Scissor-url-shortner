@@ -14,6 +14,7 @@ const Faq = () => {
       id="faq"
       className="max-w-2xl mx-auto bg-color-bg_primary-500 rounded-lg space-y-12 p-6 md:px-16 md:rounded-3xl lg:max-w-4xl"
     >
+      <h3 className="font-bold text-center text-xl md:text-3xl">FAQS</h3>
       {faqs.map((faq, index) => (
         <div key={index}>
           <div className="accordion-item">
