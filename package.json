@@ -14,7 +14,7 @@
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "firebase": "^9.22.2",
-    "nanoid": "^4.0.2",
+    "nanoid": "^5.1.7",
     "next": "15.5.14",
     "postcss": "8.4.24",
     "qrcode.react": "^3.1.0",
